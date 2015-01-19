@@ -1,4 +1,5 @@
 takeWhile' :: (a -> Bool) -> [a] -> [a]
+takeWhile' f [] = []
 takeWhile' f (x:xs) 
     | f x = x : takeWhile f xs
     | otherwise = takeWhile f xs
